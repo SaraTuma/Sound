@@ -1,0 +1,14 @@
+@mixin boxShadow{
+   box-shadow: 3px 3px 7px $sombra-2,
+   -5px -5px 6px $sombra-1;
+   border-radius: 50%;
+   color: $cor-cinza;
+   border: 0.5px solid $cor-branca;
+}
+
+@mixin boxShadowInset{
+   @include boxShadow;
+   box-shadow: inset 3px 3px 7px $sombra-2,
+    -5px -5px 6px $sombra-1;  
+}
+

@@ -1,0 +1,31 @@
+// PALETA DE CORES UTILIZADAS
+
+$cor-fundo: #eff5f8;
+$cor-fundo-app: #edf3fa;
+$sombra-1: #FCFFFF;
+$sombra-2: #c1cee0;
+$sombra-3: #89c3eb;
+$sombra-4: #aecdf8;
+$cor-branca: #f8f8f8;
+$cor-cinza: #6C7E96;
+$cor-azul: #668fff;
+
+// TAMANHO DA FONTE
+
+$font-1: 1.8em;
+$font-2: 1.5em;
+$font-3: 1.2em;
+$font-4: 1.0em;
+$font-5: 0.9em;
+
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: $cor-fundo;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
