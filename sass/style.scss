@@ -12,7 +12,7 @@
    background: $cor-fundo-app;
 
    position: relative;
-   // overflow: hidden;
+   overflow: hidden;
 }
 
 // MENU
@@ -125,6 +125,8 @@
       }
    }
 
+   .
+
 }
 
 // PAINEL DE ESCOLHA DAS MÚSICAS
@@ -139,26 +141,24 @@
    height: 100%;
 
    position: absolute;
-    right: -30rem;
+   
+   right: -100rem;
    top: 0;
-
-   // right: -100rem;
-   // top: 0;
    background: $cor-fundo-app;
 
    border-radius: 20px;
    transition: 0.8s;
-   // opacity: 0;
-   // visibility: hidden;
+   opacity: 0;
+   visibility: hidden;
 
    display: flex;
    align-items: center;
    justify-content: center;
 
    &.ativo{
-      // right: 0;
-      // opacity: 1;
-      // visibility: visible;
+      right: 0;
+      opacity: 1;
+      visibility: visible;
    }
 }
 
@@ -168,6 +168,8 @@
    width: 320px;
    box-sizing: border-box;
    padding: 9px 30px;
+   border: 1px solid #ccc;
+   border-radius: 50px;
 
    display: flex;
    align-items: center;
@@ -175,7 +177,8 @@
 
    cursor: pointer;
 
-   color: $cor-cinza;
+   @include boxShadowInset;
+   border-radius: 50px;
 
    i{
       width: 50px;
@@ -188,13 +191,19 @@
    }
 
    &.ativo{
-      border: 1px solid #ccc;
-      @include boxShadowInset;
-      border-radius: 50px;
+      color: $cor-azul;
+
+      i{
+         color: $cor-azul;
+      }
    }
 }
 
 .music-list li+li{
    margin-top: 10px;
+}
+
+.music span{
+   font-weight: 300;
 }
 

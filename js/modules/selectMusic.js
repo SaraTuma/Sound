@@ -1,46 +1,18 @@
 export default function initSelectMusic(){
-   const list = document.querySelectorAll('.music-list li');
-   let contador = 0;
+   const list = document.querySelectorAll('.music-list li');  
 
    // FUNÇÃO DO BOTÃO DE PASSAR A MUSICA
-   function proxima(){      
-      const avancar = document.querySelector('.proxima i');  
+   list.forEach((item) => {
+      item.addEventListener('click', function(){
 
-      function proxMusic(){
-         let listActivated = document.querySelector('.ativo');
+         let listActived = document.querySelector('.music-list .ativo');
 
-         if(contador === list.length){
+         if(listActived.classList.contains('ativo')){
+            listActived.classList.remove('ativo');
+         }
 
-            // NAO FAÇA NADA
-            
-         } else {
-            for(let i = 0; i < 1; i++){
-               list[contador++].classList.add('ativo');
-            }
-            listActivated.classList.remove('ativo');  
-         }         
-      };
+         item.classList.add('ativo');
 
-      avancar.addEventListener('click', proxMusic);
-   }
-
-   proxima();
-
-   // FUNÇÃO DO BOTÃO DE VOLTAR A MUSICA
-   function anterior(){    
-      const voltar = document.querySelector('.anterior i');
-
-      function musicAnterior(){
-        
-
-         
-        
-
-
-      };
-
-      voltar.addEventListener('click', musicAnterior);
-   }
-
-   anterior();
+      });
+   });
 }
