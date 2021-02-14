@@ -1,16 +1,3 @@
-  //   --gradient-colors: #3a3a3a, #111111fd;
-  // --cor-fundo: #250bee00;
-  // --cor-fundo-app: rgba(31, 31, 31, 0.945);
-
-  // --cor-sombra-1: #464646; 
-  // --cor-sombra-2: #111111;
-  // --cor-sombra-3: #222222; 
-  // --cor-sombra-4: #000000;
-
-  // --cor-primary: #ffffff;
-  // --cor-secondary: #ff4800;
-  // --cor-terciary: #ff7300;
-
 export default function initDarkMode(){   
   let color = document.querySelector(':root');
   let activeDark = document.querySelector('.dark-theme');
