@@ -1,14 +1,19 @@
 // PALETA DE CORES UTILIZADAS
 
-$cor-fundo: #eff5f8;
-$cor-fundo-app: #edf3fa;
-$sombra-1: #FCFFFF;
-$sombra-2: #c1cee0;
-$sombra-3: #89c3eb;
-$sombra-4: #aecdf8;
-$cor-branca: #f8f8f8;
-$cor-cinza: #6C7E96;
-$cor-azul: #668fff;
+:root{
+  --gradient-colors: #f0f2f5, #eaedf1;
+  --cor-fundo: #ffffff;
+  --cor-fundo-app: #e9eff7ea;
+
+  --cor-sombra-1: #ffffff;
+  --cor-sombra-2: rgb(203, 212, 228);
+  --cor-sombra-3: #1e3a55;
+  --cor-sombra-4: #0e2349;  
+
+  --cor-primary: #f8f8f8;
+  --cor-secondary: #5e728d;
+  --cor-terciary: #4f8cff;
+}
 
 // TAMANHO DA FONTE
 
@@ -22,7 +27,7 @@ $font-5: 0.9em;
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: $cor-fundo;
+  background: var(--cor-fundo);
 
   display: flex;
   align-items: center;
