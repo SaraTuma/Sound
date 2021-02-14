@@ -6,7 +6,7 @@
 
 .phone{
    width: 400px;
-   height: 750px;
+   height: auto;
    border-radius: 20px;
    box-shadow: 3px 5px 8px var(--cor-sombra-2);
    background: linear-gradient(-140deg, var(--gradient-colors));
@@ -86,6 +86,7 @@
       width: 100%;
       @include boxShadow;
       border-radius: 50px;
+      background: transparent;
    }
 }
 
@@ -96,7 +97,7 @@
    align-items: center;
    justify-content: space-around;
 
-   margin-top: 50px;
+   margin: 50px 0;
 
    i{
       width: 70px;
@@ -122,6 +123,12 @@
       i{
          color:  var(--cor-primary);
       }
+   }
+}
+
+@media screen and (max-width: 500px){
+   .commands{
+      margin: 20px 0;
    }
 }
 
@@ -202,4 +209,3 @@
 .music span{
    font-weight: 300;
 }
-
